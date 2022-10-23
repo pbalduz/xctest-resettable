@@ -1,0 +1,3 @@
+protocol ResettableProtocol {
+    func reset()
+}
