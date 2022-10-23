@@ -10,6 +10,10 @@ let package = Package(
         ),
     ],
     targets: [
-        .target(name: "xctest-resettable")
+        .target(name: "xctest-resettable"),
+        .testTarget(
+            name: "xctest-resettableTests",
+            dependencies: ["xctest-resettable"]
+        )
     ]
 )
