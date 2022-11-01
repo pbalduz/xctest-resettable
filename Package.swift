@@ -4,16 +4,13 @@ import PackageDescription
 let package = Package(
     name: "xctest-resettable",
     products: [
-        .library(
-            name: "xctest-resettable",
-            targets: ["xctest-resettable"]
-        ),
+        .library(name: "TestResettable", targets: ["TestResettable"]),
     ],
     targets: [
-        .target(name: "xctest-resettable"),
+        .target(name: "TestResettable"),
         .testTarget(
-            name: "xctest-resettableTests",
-            dependencies: ["xctest-resettable"]
+            name: "TestResettableTests",
+            dependencies: ["TestResettable"]
         )
     ]
 )

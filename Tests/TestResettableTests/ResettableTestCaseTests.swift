@@ -1,5 +1,5 @@
 import XCTest
-@testable import xctest_resettable
+@testable import TestResettable
 
 class ResettableTestCaseTests: XCTestCase {
     
