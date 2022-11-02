@@ -1,6 +1,6 @@
 import XCTest
 
-public class ResettableTestCase: XCTestCase {
+open class ResettableTestCase: XCTestCase {
     
     public override func tearDown() {
         let resettableChildren = Mirror(reflecting: self).children.compactMap {
