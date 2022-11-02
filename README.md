@@ -20,11 +20,6 @@ This framework, based on this principle, implements additional logic so that thi
 The property wrapper that enables the release of your test objects is `@Resettable` and it works under a `ResettableTestCase` subclass.
 These are the different ways you can use the `@Resettable` property wrapper:
 
-### Simple init
-```
-@Resettable var sut: SUT! = SUT()
-```
-
 ### Lazy init
 ```
 @Resettable var sut: SUT!
