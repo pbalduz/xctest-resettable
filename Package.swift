@@ -4,8 +4,11 @@ import PackageDescription
 let package = Package(
     name: "xctest-resettable",
     platforms: [
-        .iOS(.v14),
-        .macOS(.v10_15)
+        .iOS(.v13),
+        .macCatalyst(.v13),
+        .macOS(.v10_15),
+        .tvOS(.v13),
+        .watchOS(.v6)
     ],
     products: [
         .library(name: "TestResettable", targets: ["TestResettable"]),
