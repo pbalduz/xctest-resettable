@@ -1,5 +1,7 @@
 # 🪶 xctest-resettable
 
+[![CI](https://github.com/pbalduz/xctest-resettable/actions/workflows/ci.yml/badge.svg)](https://github.com/pbalduz/xctest-resettable/actions/workflows/ci.yml)
+
 A framework to help keep your unit tests lightweight.
 
 ## Motivation
