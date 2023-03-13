@@ -1,6 +1,8 @@
 # 🪶 xctest-resettable
 
 [![CI](https://github.com/pbalduz/xctest-resettable/actions/workflows/ci.yml/badge.svg)](https://github.com/pbalduz/xctest-resettable/actions/workflows/ci.yml)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fpbalduz%2Fxctest-resettable%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/pbalduz/xctest-resettable)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fpbalduz%2Fxctest-resettable%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/pbalduz/xctest-resettable)
 
 A framework to help keep your unit tests lightweight.
 
