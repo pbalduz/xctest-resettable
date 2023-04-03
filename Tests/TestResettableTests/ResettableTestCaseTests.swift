@@ -11,7 +11,7 @@ class ResettableTestCaseTests: XCTestCase {
         XCTAssertNil(sut.resettableString)
         XCTAssertEqual(sut.nonResettableString, "non resettable")
     }
-    
+
     func testResettableResetMethodInvokedOnTearDown() {
         let sut = TestCaseStub()
         XCTAssertFalse(sut.resetWasCalled)
@@ -22,7 +22,7 @@ class ResettableTestCaseTests: XCTestCase {
 }
 
 private class TestCaseStub: ResettableTestCase {
-    @Resettable var resettableString = "resettable"
+    @Resettable var resettableString: String! = "resettable"
     var nonResettableString = "non resettable"
     
     struct TestValue {
@@ -32,8 +32,9 @@ private class TestCaseStub: ResettableTestCase {
             resetClosure()
         }
     }
-    
-    @Resettable(onReset: TestValue.reset)
+
+    // TODO: Add reset method to the new implementation
+//    @Resettable(onReset: TestValue.reset)
     var resettableValue: TestValue!
     
     var resetWasCalled = false
